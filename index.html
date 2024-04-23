@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteorologická stanice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meteorologická stanice</h1>
+    </header>
+    <main>
+        <form id="cityForm">
+            <input type="text" id="cityName" placeholder="Město">
+            <input type="number" id="temperature" placeholder="Teplota">
+            <input type="text" id="description" placeholder="Popis počasí">
+            <button type="submit">Přidat město</button>
+        </form>        
+        <div class="container">
+            <h2>Vyberte město:</h2>
+            <select id="city-select">
+                <option value="praha">Praha</option>
+                <option value="brno">Brno</option>
+                <option value="ostrava">Ostrava</option>
+                <option value="plzen">Plzeň</option>
+                <option value="liberec">Liberec</option>
+            </select>
+            <div id="weather-info">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meteorologická stanice</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
